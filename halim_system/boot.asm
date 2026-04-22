@@ -3,7 +3,7 @@
 global start
 
 start:
-    ; الانتقال للوضع المحمي (32-بت)
+
     cli
     lgdt [gdt_descriptor]
     mov eax, cr0
@@ -18,7 +18,7 @@ init_32:
     mov es, ax
     mov ss, ax
     mov esp, 0x90000
-    call kmain       ; استدعاء دالة C
+    call kmain       
     jmp $
 
 gdt_start:
