@@ -9,3 +9,7 @@ This simple system includes a shell. The password is: h.
 It definitely has support for some keyboard characters and also a scrolling feature.
 That's all.
 I hope you like it.
+
+For testing :
+
+  qemu-system-i386 -hda halimos.img 
